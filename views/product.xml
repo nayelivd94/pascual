@@ -7,6 +7,9 @@
             <field name="arch" type="xml">
                 <xpath expr="//page/group[@name='inventory']/group[@name='group_lots_and_weight']/div[@name='volume']" position="after">
                     <field name="container_id" />
+                    <field name="liters_container" />
+                    <field name="marca_id" />
+                    <field name="family_id" />
                 </xpath>
 
             </field>

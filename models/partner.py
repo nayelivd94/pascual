@@ -12,6 +12,9 @@ class ResPartner(models.Model):
     vat = fields.Char(string='RFC', help="Tax Identification Number. "
                                          "Fill it if the company is subjected to taxes. "
                                          "Used by the some of the legal statements.", required=True)
+    name_commercial = fields.Char(string="Nombre Comercial")
+    sector_id = fields.Many2one('partner.sector', string="Sector")
+    categorysector_id = fields.Many2one('category.sector', string="Categoria del Sector")
 
     @api.model
     def create(self, vals):

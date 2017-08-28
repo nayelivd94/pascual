@@ -1,4 +1,8 @@
 import purchase
+import partner_sector
+import category_sector
 import partner
 import product_container
+import product_family
+import product_marca
 import product
